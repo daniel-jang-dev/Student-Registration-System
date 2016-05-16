@@ -1,0 +1,49 @@
+body{
+	font-family: Verdana, sans-serif; 
+	font-size: 100%;
+}
+html, body { 
+	height:100%;
+}
+
+div.global {
+    text-align: left;
+    border: 1px solid #dedede;
+    background: #efefef;
+    width: 580px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 1em;
+}
+
+#list {
+    text-align: left;
+    border: 1px solid #dedede;
+    background: #efefef;
+    width: 900px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 1em;
+} 
+
+.buttons {
+    float: right;
+    margin: 3px;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+.message {
+    color: red;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 125%;
+    margin-left: 2em;
+}
+
+.value {
+    color: blue;
+    font-style: oblique;    
+}

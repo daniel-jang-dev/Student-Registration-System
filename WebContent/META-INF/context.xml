@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Context antiJARLocking="true" path="/A5_StudentInfo">
+	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" 
+	logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" 
+	name="jdbc/students_7" password="sesame" removeAbandoned="true" 
+	removeAbandonedTimeout="60" type="javax.sql.DataSource" 
+	url="jdbc:mysql://localhost:3306/students_7" username="st7_user"/>
+	            
+	<Realm className="org.apache.catalina.realm.DataSourceRealm" 
+	dataSourceName="jdbc/students_7" debug="99" localDataSource="true" 
+	roleNameCol="role_name" userCredCol="user_password" 
+	userNameCol="user_login" userRoleTable="roles" userTable="logins"/>
+</Context>

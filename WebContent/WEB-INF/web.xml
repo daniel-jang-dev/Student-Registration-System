@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  
+  <welcome-file-list>  
+   <welcome-file>index.html</welcome-file>
+  </welcome-file-list>  
+  
+  <servlet>
+    <servlet-name>Teacher</servlet-name>
+    <servlet-class>sheridan.controller.TeacherInfoServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Student</servlet-name>
+    <servlet-class>sheridan.controller.StudentInfoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Teacher</servlet-name>
+    <url-pattern>/teacher</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Student</servlet-name>
+    <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Student</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>teacher</web-resource-name>
+      <url-pattern>/teacher</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>student</web-resource-name>
+      <url-pattern>/student</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+      <role-name>student</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/login.html</form-login-page>
+      <form-error-page>/login_failed.html</form-error-page>
+    </form-login-config>
+  </login-config>
+  
+  <error-page>
+    <error-code>403</error-code>
+    <location>/access_denied.html</location>
+  </error-page>
+  
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  
+</web-app>

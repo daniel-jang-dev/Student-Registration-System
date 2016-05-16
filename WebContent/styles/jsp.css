@@ -1,0 +1,57 @@
+body{
+    font:100% verdana;
+}
+html, body { height:100%;
+}
+#global {
+    font:100% verdana;
+    text-align: left;
+    border: 1px solid #dedede;
+    background: #efefef;
+    width: 560px;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+div.global {
+    text-align: left;
+    border: 1px solid #dedede;
+    background: #efefef;
+    width: 580px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 1em;
+}
+
+#list_box {
+    font:100% verdana;
+    text-align: left;
+    border: 1px solid #dedede;
+    background: #efefef;
+    width: 700px;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+.buttons {
+    margin: 3px;
+}
+#errors, li {
+	color: red;
+}
+.error {
+    color: red;
+    font-size: 9pt;	
+}
+.message {
+    color: red;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 125%;
+    margin-left: 2em;
+}
+
+.value {
+    color: blue;
+    font-style: oblique;    
+}
