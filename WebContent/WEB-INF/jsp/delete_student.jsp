@@ -3,9 +3,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles/jsp.css" type="text/css"/>
-    <title>Student Delete</title>
+    <title>Delete Student</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>        
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
   </head>
   <body>
     <div class="global">
@@ -47,11 +53,11 @@
         <form action="teacher" method="post">
           <input type="hidden" name="action" value="remove_student"/>
           <input type="hidden" name="student_id" value="${student.id}"/>
-          <input class="buttons" type="submit" value="Delete"/>
+          <input type="submit" value="Delete" class="btnSubmit"/>
         </form>
         <form action="teacher" method="get">
           <input type="hidden" name="action" value="list_students"/>
-          <input class="buttons" type="submit" value="Cancel"/>
+          <input type="submit" value="Cancel" class="btnReset"/>
         </form>
         
       </fieldset>
