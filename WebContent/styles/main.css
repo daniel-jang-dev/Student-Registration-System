@@ -1,49 +1,205 @@
-body{
-	font-family: Verdana, sans-serif; 
-	font-size: 100%;
-}
-html, body { 
-	height:100%;
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-div.global {
-    text-align: left;
-    border: 1px solid #dedede;
-    background: #efefef;
-    width: 580px;
-    padding: 20px;
-    margin: 100px auto;
-    border-radius: 1em;
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+.global {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+}
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 
-#list {
-    text-align: left;
-    border: 1px solid #dedede;
-    background: #efefef;
-    width: 900px;
-    padding: 20px;
-    margin: 100px auto;
-    border-radius: 1em;
-} 
-
-.buttons {
-    float: right;
-    margin: 3px;
+form {
+	max-width: 480px;
+	margin: 10px auto;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
 }
 
+a {
+	font-size: 1.5em;
+}
 li {
-    margin-bottom: 1em;
+	padding: 10px;
+}
+#confirm span, span.value {
+	font-size: 1.5em;
+	color: #00A;
 }
 
-.message {
-    color: red;
-    font-style: oblique;
-    font-weight: bolder;
-    font-size: 125%;
-    margin-left: 2em;
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
 }
 
-.value {
-    color: blue;
-    font-style: oblique;    
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  width:20%;
+  display: inline-block;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+.btnSubmit, .btnReset {
+  padding: 19px 39px 18px 39px;
+  
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+.btnSubmit{
+	color: #FFF;
+	background-color: #4bc970;
+}
+.btnReset {
+	color: #4bc970;
+	background-color: #FFF;
+}
+@import "http://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+.rwd-table {
+  margin: 1em auto;
+  min-width: 300px;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+.rwd-table tr {
+  border-color: #46637f;
+}
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  color: #dd5;
+}
+#errors, .message{
+	color: red;
+	font-size: 1.2em;
 }
