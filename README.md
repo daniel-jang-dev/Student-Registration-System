@@ -9,18 +9,16 @@ The Student Registration System shows students list and user can add or delete s
 -	Student or teacher can register
 
 ![alt tag](screenshots/s2.png)
+![alt tag](screenshots/s3.png)
 
 -	Student can see only shared students list
 
-![alt tag](screenshots/s3.png)
 ![alt tag](screenshots/s4.png)
-
--	Teacher can see all students list
-
 ![alt tag](screenshots/s5.png)
 
--	Teacher can delete students
+-	Teacher can see all students list and delete students
 
 ![alt tag](screenshots/s6.png)
+![alt tag](screenshots/s7.png)
 
 I used DataSourceRealm for login validation
