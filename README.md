@@ -21,4 +21,8 @@ The Student Registration System shows students list and user can add or delete s
 ![alt tag](screenshots/s6.png)
 ![alt tag](screenshots/s7.png)
 
+- The table is reponsive
+
+![alt tag](screenshots/s8.png)
+
 I used DataSourceRealm for login validation
